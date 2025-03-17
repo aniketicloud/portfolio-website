@@ -100,7 +100,7 @@ export default function Home() {
         <section className="container flex flex-col items-center justify-center gap-4 py-24 md:py-32 text-center">
           <div className="relative w-32 h-32 rounded-full overflow-hidden mb-4">
             <Image
-              src="/profile-removebg.png"
+              src="/profile-removebg.jpg"
               alt="Aniket"
               width={128}
               height={128}
