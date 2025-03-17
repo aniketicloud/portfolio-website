@@ -140,6 +140,8 @@ export default function Home() {
                 alt="Aniket working on code"
                 width={600}
                 height={400}
+                placeholder="blur"
+                blurDataURL="/placeholder.svg"
                 className="rounded-lg object-cover"
               />
             </div>
