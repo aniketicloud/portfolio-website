@@ -1,4 +1,14 @@
-import { Github, Linkedin, Mail, ArrowDown, ExternalLink } from "lucide-react";
+import {
+  Chrome,
+  Github,
+  Linkedin,
+  Mail,
+  ArrowDown,
+  ExternalLink,
+  HardDrive,
+  Workflow,
+  ShieldCheck,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,13 +22,15 @@ export default function Home() {
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur">
         <div className="container flex h-16 items-center justify-between">
           <div className="font-bold text-xl">
-            <Image
-              src="/aniket-logo.webp"
-              alt="Aniket Logo"
-              width={40}
-              height={40}
-              className="object-contain rounded-full"
-            />
+            <Link href="/">
+              <Image
+                src="/aniket-logo.webp"
+                alt="Aniket Logo"
+                width={40}
+                height={40}
+                className="object-contain rounded-full"
+              />
+            </Link>
           </div>
           <nav className="hidden md:flex gap-6">
             <Link
@@ -167,22 +179,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
               <div className="flex flex-col items-center space-y-4 p-6 border rounded-lg bg-card">
                 <div className="p-2 bg-primary/10 rounded-full">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="text-primary h-10 w-10"
-                  >
-                    <circle cx="12" cy="12" r="10" />
-                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-                    <path d="M12 17h.01" />
-                  </svg>
+                  <Chrome className="h-6 w-6" />
                 </div>
                 <h3 className="text-xl font-bold">Frontend</h3>
                 <ul className="text-center space-y-1 text-muted-foreground">
@@ -195,20 +192,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center space-y-4 p-6 border rounded-lg bg-card">
                 <div className="p-2 bg-primary/10 rounded-full">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="text-primary h-10 w-10"
-                  >
-                    <path d="M18 10h-4V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v6H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2z" />
-                  </svg>
+                  <HardDrive className="h-6 w-6" />
                 </div>
                 <h3 className="text-xl font-bold">Backend</h3>
                 <ul className="text-center space-y-1 text-muted-foreground">
@@ -221,23 +205,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center space-y-4 p-6 border rounded-lg bg-card">
                 <div className="p-2 bg-primary/10 rounded-full">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="text-primary h-10 w-10"
-                  >
-                    <rect width="20" height="20" x="2" y="2" rx="2" />
-                    <path d="M9 22v-4h6v4" />
-                    <path d="M14 15h1a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-1" />
-                    <path d="M10 15h-1a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h1" />
-                  </svg>
+                  <Workflow className="h-6 w-6" />
                 </div>
                 <h3 className="text-xl font-bold">DevOps</h3>
                 <ul className="text-center space-y-1 text-muted-foreground">
@@ -250,21 +218,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center space-y-4 p-6 border rounded-lg bg-card">
                 <div className="p-2 bg-primary/10 rounded-full">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="text-primary h-10 w-10"
-                  >
-                    <path d="m12 14 4-4" />
-                    <path d="M3.34 19a10 10 0 1 1 17.32 0" />
-                  </svg>
+                  <ShieldCheck className="h-6 w-6" />
                 </div>
                 <h3 className="text-xl font-bold">Testing</h3>
                 <ul className="text-center space-y-1 text-muted-foreground">
@@ -300,7 +254,7 @@ export default function Home() {
                     alt="E-commerce Platform"
                     width={600}
                     height={400}
-                    className="object-cover transition-transform group-hover:scale-105"
+                    className="object-cover grayscale transition-all group-hover:grayscale-0"
                   />
                 </div>
                 <div className="p-6">
@@ -356,7 +310,7 @@ export default function Home() {
                     alt="Real-time Chat App"
                     width={600}
                     height={400}
-                    className="object-cover transition-transform group-hover:scale-105"
+                    className="object-cover grayscale transition-all group-hover:grayscale-0"
                   />
                 </div>
                 <div className="p-6">
@@ -411,7 +365,7 @@ export default function Home() {
                     alt="Task Management Dashboard"
                     width={600}
                     height={400}
-                    className="object-cover transition-transform group-hover:scale-105"
+                    className="object-cover grayscale transition-transform group-hover:grayscale-0 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-6">
