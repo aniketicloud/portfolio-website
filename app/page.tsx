@@ -104,7 +104,7 @@ export default function Home() {
               alt="Aniket"
               width={128}
               height={128}
-              className="object-cover grayscale hover:grayscale-0 transition-all"
+              className="object-cover grayscale hover:grayscale-0"
             />
           </div>
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
@@ -250,11 +250,11 @@ export default function Home() {
               <div className="group relative overflow-hidden rounded-lg border bg-background">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/slicks-slices.png"
+                    src="/slicks-slices.jpg"
                     alt="E-commerce Platform"
                     width={600}
                     height={400}
-                    className="object-cover grayscale transition-all group-hover:grayscale-0"
+                    className="object-cover grayscale transition-all group-hover:grayscale-0 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-6">
@@ -306,11 +306,11 @@ export default function Home() {
               <div className="group relative overflow-hidden rounded-lg border bg-background">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/remix-expense-manager.png"
-                    alt="Real-time Chat App"
+                    src="/remix-expense-manager.jpg"
+                    alt="Expense Manager"
                     width={600}
                     height={400}
-                    className="object-cover grayscale transition-all group-hover:grayscale-0"
+                    className="object-cover grayscale transition-all group-hover:grayscale-0 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-6">
@@ -361,11 +361,11 @@ export default function Home() {
               <div className="group relative overflow-hidden rounded-lg border bg-background">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/microfrontend-project.png"
+                    src="/microfrontend-project.jpg"
                     alt="Task Management Dashboard"
                     width={600}
                     height={400}
-                    className="object-cover grayscale transition-transform group-hover:grayscale-0 group-hover:scale-105"
+                    className="object-cover grayscale transition-all group-hover:grayscale-0 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-6">
