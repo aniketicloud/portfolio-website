@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
+import Experience from "@/app/ui/Experience";
 
 export default function Home() {
   return (
@@ -53,7 +54,7 @@ export default function Home() {
           </nav>
           <div className="flex items-center gap-2">
             <Link
-              href="https://github.com/johndoe"
+              href="https://github.com/aniketicloud"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -63,7 +64,7 @@ export default function Home() {
               </Button>
             </Link>
             <Link
-              href="https://linkedin.com/in/johndoe"
+              href="https://www.linkedin.com/in/aniketicloud"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -72,7 +73,7 @@ export default function Home() {
                 <span className="sr-only">LinkedIn</span>
               </Button>
             </Link>
-            <Link href="mailto:johndoe@example.com">
+            <Link href="mailto:aniketicloud@gmail.com">
               <Button variant="ghost" size="icon">
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
@@ -124,7 +125,7 @@ export default function Home() {
             <div>
               <Image
                 src="/about-section.webp"
-                alt="John working on code"
+                alt="Aniket working on code"
                 width={600}
                 height={400}
                 className="rounded-lg object-cover"
@@ -306,7 +307,9 @@ export default function Home() {
                   <h3 className="text-xl font-bold">Pizza Platform</h3>
                   <p className="text-muted-foreground mt-2">
                     A full-featured online pizza store with product catalog,
-                    shopping cart, and payment processing.
+                    shopping cart, and payment processing. The project uses
+                    serverless functions, SSR, SSG pages with optimized images
+                    and SEO.
                   </p>
                   <div className="flex flex-wrap gap-2 mt-4">
                     <span className="inline-flex items-center rounded-md bg-primary/10 px-2 py-1 text-xs font-medium text-primary">
@@ -361,7 +364,7 @@ export default function Home() {
                   <p className="text-muted-foreground mt-2">
                     An expense manager with analytics. Webapp with optimized
                     images, static and server side rendered pages with
-                    Authentication and Redis implmentation
+                    Authentication and Redis implmentation.
                   </p>
                   <div className="flex flex-wrap gap-2 mt-4">
                     <span className="inline-flex items-center rounded-md bg-primary/10 px-2 py-1 text-xs font-medium text-primary">
@@ -460,18 +463,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center mt-12">
-              <Button asChild variant="outline">
-                <Link
-                  href="https://github.com/johndoe"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Github className="mr-2 h-5 w-5" />
-                  View more on GitHub
-                </Link>
-              </Button>
-            </div>
           </div>
         </section>
 
@@ -488,221 +479,35 @@ export default function Home() {
                 </p>
               </div>
             </div>
+
             <div className="mx-auto grid max-w-4xl gap-8 mt-12">
-              <div className="flex flex-col gap-2 rounded-lg border p-6 bg-card">
-                <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
-                  <h3 className="text-xl font-bold">
-                    Senior Full Stack Developer
-                  </h3>
-                  <span className="text-sm text-muted-foreground">
-                    Jan 2021 - Present
-                  </span>
-                </div>
-                <p className="text-muted-foreground">Tech Innovations Inc.</p>
-                <ul className="mt-2 space-y-2 text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-5 w-5 text-primary shrink-0"
-                    >
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                    <span>
-                      Lead the development of a microservices-based e-commerce
-                      platform
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-5 w-5 text-primary shrink-0"
-                    >
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                    <span>
-                      Implemented CI/CD pipelines with GitHub Actions, reducing
-                      deployment time by 40%
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-5 w-5 text-primary shrink-0"
-                    >
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                    <span>
-                      Established automated testing strategies using Playwright,
-                      achieving 90% test coverage
-                    </span>
-                  </li>
-                </ul>
-              </div>
-              <div className="flex flex-col gap-2 rounded-lg border p-6 bg-card">
-                <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
-                  <h3 className="text-xl font-bold">Full Stack Developer</h3>
-                  <span className="text-sm text-muted-foreground">
-                    Mar 2018 - Dec 2020
-                  </span>
-                </div>
-                <p className="text-muted-foreground">WebSolutions Co.</p>
-                <ul className="mt-2 space-y-2 text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-5 w-5 text-primary shrink-0"
-                    >
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                    <span>
-                      Developed and maintained multiple Vue.js applications with
-                      Vuex state management
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-5 w-5 text-primary shrink-0"
-                    >
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                    <span>
-                      Built Node.js backend services integrated with MongoDB and
-                      PostgreSQL
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-5 w-5 text-primary shrink-0"
-                    >
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                    <span>
-                      Containerized applications using Docker for consistent
-                      development and deployment
-                    </span>
-                  </li>
-                </ul>
-              </div>
-              <div className="flex flex-col gap-2 rounded-lg border p-6 bg-card">
-                <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
-                  <h3 className="text-xl font-bold">Front-End Developer</h3>
-                  <span className="text-sm text-muted-foreground">
-                    Jun 2016 - Feb 2018
-                  </span>
-                </div>
-                <p className="text-muted-foreground">Digital Creations LLC</p>
-                <ul className="mt-2 space-y-2 text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-5 w-5 text-primary shrink-0"
-                    >
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                    <span>
-                      Developed responsive web applications using React and
-                      JavaScript ES6
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-5 w-5 text-primary shrink-0"
-                    >
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                    <span>
-                      Collaborated with back-end developers to integrate
-                      front-end with APIs
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-5 w-5 text-primary shrink-0"
-                    >
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                    <span>
-                      Optimized web performance, improving load times by 35%
-                    </span>
-                  </li>
-                </ul>
-              </div>
+              <Experience
+                companyName="John Deere"
+                from="Dec 2022"
+                to="Mar 2025"
+                location="Client -Remote"
+                responsibilities={[
+                  "Led the frontend team to deploy John Deere official site of many countries with locales.",
+                  "Collaborated with back-end developers to integrate front-end with APIs",
+                  "Optimized web performance, improving load times by 35%",
+                  "Established automated testing strategies using Playwright, achieving pixel perfect UI components",
+                  "Implemented CI/CD pipelines with GitHub Actions, reducing deployment time by 40%",
+                  "Containerized testing framework using Docker for consistent development and testing",
+                ]}
+              />
+              <Experience
+                companyName="DeLaval"
+                from="Aug 2020"
+                to="Dec 2022"
+                location="Client - Office"
+                responsibilities={[
+                  "Lead the development of a micro frontend-based on Vue and React",
+                  "Designed a design system with Storybook to match the company's branding",
+                  "Developed a real-time tracking application using WebSockets and Redis",
+                  "Implemented Sentry for error tracking and monitoring",
+                  "Established automated testing strategies using Cypress, achieving 90% test coverage",
+                ]}
+              />
             </div>
           </div>
         </section>
@@ -727,38 +532,49 @@ export default function Home() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
                     <Mail className="h-5 w-5 text-primary" />
                   </div>
-                  <div>
+                  <Link href="mailto:aniketicloud@gmail.com">
                     <h3 className="font-semibold">Email</h3>
                     <p className="text-sm text-muted-foreground">
-                      johndoe@example.com
+                      aniketicloud@gmail.com
                     </p>
-                  </div>
+                  </Link>
                 </div>
+
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
                     <Linkedin className="h-5 w-5 text-primary" />
                   </div>
-                  <div>
+                  <Link
+                    href="https://www.linkedin.com/in/aniketicloud"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <h3 className="font-semibold">LinkedIn</h3>
                     <p className="text-sm text-muted-foreground">
-                      linkedin.com/in/johndoe
+                      https://www.linkedin.com/in/aniketicloud
                     </p>
-                  </div>
+                  </Link>
                 </div>
+
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
                     <Github className="h-5 w-5 text-primary" />
                   </div>
-                  <div>
+                  <Link
+                    href="https://github.com/aniketicloud"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <h3 className="font-semibold">GitHub</h3>
                     <p className="text-sm text-muted-foreground">
-                      github.com/johndoe
+                      https://github.com/aniketicloud
                     </p>
-                  </div>
+                  </Link>
                 </div>
               </div>
               <div className="space-y-4">
-                <form className="space-y-4">
+                {/* TODO: convert this to a form */}
+                <div className="space-y-4">
                   <div className="grid gap-4 sm:grid-cols-2">
                     <div className="space-y-2">
                       <label
@@ -804,10 +620,8 @@ export default function Home() {
                       required
                     />
                   </div>
-                  <Button type="submit" className="w-full">
-                    Send Message
-                  </Button>
-                </form>
+                  <Button className="w-full">Send Message</Button>
+                </div>
               </div>
             </div>
           </div>
@@ -822,7 +636,7 @@ export default function Home() {
           </p>
           <div className="flex items-center gap-4">
             <Link
-              href="https://github.com/johndoe"
+              href="https://github.com/aniketicloud"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -832,7 +646,7 @@ export default function Home() {
               </Button>
             </Link>
             <Link
-              href="https://linkedin.com/in/johndoe"
+              href="https://www.linkedin.com/in/aniketicloud"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -841,7 +655,7 @@ export default function Home() {
                 <span className="sr-only">LinkedIn</span>
               </Button>
             </Link>
-            <Link href="mailto:johndoe@example.com">
+            <Link href="mailto:aniketicloud@gmail.com">
               <Button variant="ghost" size="icon">
                 <Mail className="h-4 w-4" />
                 <span className="sr-only">Email</span>
