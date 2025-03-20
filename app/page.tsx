@@ -8,6 +8,7 @@ import {
   HardDrive,
   Workflow,
   ShieldCheck,
+  ArrowUp,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -260,7 +261,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold">Pizza Platform</h3>
+                  <h3 className="text-xl font-bold">Slick's Slices</h3>
                   <p className="text-muted-foreground mt-2">
                     A full-featured online pizza store with product catalog,
                     shopping cart, and payment processing. The project uses
@@ -631,6 +632,16 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Back to Top Button */}
+      <div className="fixed bottom-4 right-4">
+        <Link href="#top">
+          <Button variant="ghost" size="icon">
+            <ArrowUp className="h-6 w-6" />
+            <span className="sr-only">Back to Top</span>
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 }
