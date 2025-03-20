@@ -438,10 +438,10 @@ export default function Home() {
 
             <div className="mx-auto grid max-w-4xl gap-8 mt-12">
               <Experience
-                companyName="John Deere"
+                companyName="John Deere - Yash Technologies"
                 from="Dec 2022"
                 to="Mar 2025"
-                location="Client -Remote"
+                location="Client - Office"
                 responsibilities={[
                   "Led the frontend team to deploy John Deere official site of many countries with locales.",
                   "Collaborated with back-end developers to integrate front-end with APIs",
@@ -452,16 +452,27 @@ export default function Home() {
                 ]}
               />
               <Experience
-                companyName="DeLaval"
+                companyName="DeLaval - Yash Technologies"
                 from="Aug 2020"
                 to="Dec 2022"
-                location="Client - Office"
+                location="Client - Remote"
                 responsibilities={[
                   "Lead the development of a micro frontend-based on Vue and React",
                   "Designed a design system with Storybook to match the company's branding",
                   "Developed a real-time tracking application using WebSockets and Redis",
                   "Implemented Sentry for error tracking and monitoring",
                   "Established automated testing strategies using Cypress, achieving 90% test coverage",
+                ]}
+              />
+              <Experience
+                companyName="Digital Pixel"
+                from="May 2017"
+                to="Aug 2020"
+                location="Pune"
+                responsibilities={[
+                  "Started as an entry level developer",
+                  "Designed React components",
+                  "Migrated a project from Spring 4 to Spring 5",
                 ]}
               />
             </div>
